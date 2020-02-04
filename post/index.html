@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="cn">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Posts | ThAoeu</title>
+    <meta property="og:title" content="Posts - ThAoeu">
+    <meta property="og:type" content="article">
+        
+        
+    <meta name="Keywords" content="vim go">
+    <meta name="description" content="Posts">
+        
+    <meta name="author" content="thaoeu">
+    <meta property="og:url" content="https://thaoeu.site/post/">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href='/css/normalize.css'>
+    <link rel="stylesheet" href='/css/style.css'>
+    <link rel="alternate" type="application/rss+xml+xml" href="https://thaoeu.site/post/index.xml" title="ThAoeu" />
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    
+
+
+    
+    
+</head>
+
+
+<body>
+    <header id="header" class="clearfix">
+    <div class="container">
+        <div class="col-group">
+            <div class="site-name ">
+                
+                    <a id="logo" href="https://thaoeu.site/">
+                        ThAoeu
+                    </a>
+                
+                <p class="description">Power by hugo</p>
+            </div>
+            <div>
+                <nav id="nav-menu" class="clearfix">
+                    <a class="current" href="https://thaoeu.site/">首页</a>
+                    
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <div id="body">
+        <div class="container">
+            <div class="col-group">
+
+                <div class="col-8" id="main">
+                    
+<div class="res-cons">
+    
+    
+    <article class="post">
+        <header>
+            <h1 class="post-title">
+                <a href="https://thaoeu.site/post/windowslinux%E5%8F%8C%E7%B3%BB%E7%BB%9F%E8%93%9D%E7%89%99%E8%BF%9E%E6%8E%A5/" title="Windows、Linux双系统蓝牙连接">Windows、Linux双系统蓝牙连接</a>
+            </h1>
+        </header>
+        <date class="post-meta meta-date">
+            2020年1月1日
+        </date>
+        
+        <div class="post-content">
+            一般笔记本安装实体Linux双系统后，切换系统后蓝牙设备总有这样那样的问题，这里将使用修改key值的方法实现双系统连接蓝牙设备。 Windows下连接设备 转至Linux，连接设备后切换至su账户 执行cd /var/lib/bluetooth/ 当前目录下会有电脑的蓝牙地址，进入该地址，ls查看已连接的设备 选定以确定的蓝牙设备，使用文本编辑器查看info文件 按照简书上的教程，在这里找到[LinkKey]值即可，但我使用的键盘info文件却不是这样的构成
+[IdentityResolvingKey] Key=FD79B32764A287D4AC210ABD9EFE2844 [LongTermKey] Key=5D5F5EC78589D2882F5142FE86D0455E Authenticated=0 EncSize=16 EDiv=57930 Rand=13493215272868294029 如果类似我这种情况，需要记录IdentityResolvingKey和LongTermKey两项数值 回到Windows，下载PSTools工具，这里请自行百度，目前还不会插入链接。。。 执行PsExec.exe -s -i regedit
+找到HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\BTHPORT\Parameters\Keys\ 由于这里我并不能使用[LinkKey]，所以操作稍有不同
+在左侧目录找到蓝牙设备地址，双击进入，分别修改[IRK][LTK]两项 reboot F2:CE:2F:54:C9:52……
+        </div>
+        <p class="readmore"><a href="https://thaoeu.site/post/windowslinux%E5%8F%8C%E7%B3%BB%E7%BB%9F%E8%93%9D%E7%89%99%E8%BF%9E%E6%8E%A5/">阅读全文</a></p>
+    </article>
+    
+    
+    
+    <article class="post">
+        <header>
+            <h1 class="post-title">
+                <a href="https://thaoeu.site/post/happynewyear/" title="HappyNewYear">HappyNewYear</a>
+            </h1>
+        </header>
+        <date class="post-meta meta-date">
+            2020年1月1日
+        </date>
+        
+        <div class="post-content">
+            新年快乐!生日快乐！ 第一篇文章 刚开始用，还不大会用Markdown 原计划是在一九年最后一天，也就是昨天上线的，结果由于脑子不在线导致没办法上线。
+二零一九年度总结 技术方面 Vim 经过一大段深坑浅坑的试探，终于确定了现在使用的Vim配置，中途出了不少小问题，尝试SpaceVim那次更是损失惨重，昨天完全删除了SpaceVim，不能说是不好，只能说是不适合我，下面贴个Vimrc展示下。
+set nu set autoindent call plug#begin('~/.vim/plugged') Plug 'mhinz/vim-startify' Plug 'easymotion/vim-easymotion' call plug#end() nmap &lt;leader&gt;f &lt;Plug&gt;(easymotion-s2) nnoremap &lt;leader&gt;w :w&lt;Cr&gt; nnoremap &lt;leader&gt;s &lt;Esc&gt;: nnoremap &lt;leader&gt;ve :vsplit $MYVIMRC&lt;Cr&gt; nnoremap &lt;leader&gt;vs :source $MYVIMRC&lt;Cr&gt; noremap &lt;leader&gt;i &lt;Esc&gt;:q&lt;Cr&gt; inoremap &lt;leader&gt;w &lt;Esc&gt;:w&lt;Cr&gt; inoremap &lt;c-u&gt; &lt;Esc&gt; viwU &quot;autocmd Filetype markdown map &lt;leader&gt;w yiWi[&lt;esc&gt;Ea](&lt;esc&gt;pa) autocmd Filetype markdown inoremap ,h &lt;Esc&gt;/&lt;(_ _)&gt;&lt;CR&gt;:nohlsearch&lt;CR&gt;c7l autocmd Filetype markdown inoremap ,s &lt;Esc&gt;/ &lt;(_ _)&gt;&lt;CR&gt;:nohlsearch&lt;CR&gt;c5l&lt;CR&gt; autocmd Filetype markdown inoremap ,n ---&lt;Enter&gt;&lt;Enter&gt; autocmd Filetype markdown inoremap ,b **** &lt;(_ _)&gt;&lt;Esc&gt;F*hi autocmd Filetype markdown inoremap ,s ~~~~ &lt;(_ _)&gt;&lt;Esc&gt;F~hi autocmd Filetype markdown inoremap ,z &lt;sup&gt;&lt;/sup&gt;&lt;(_ _)&gt;&lt;Esc&gt;F/hi autocmd Filetype markdown inoremap ,v &lt;sub&gt;&lt;/sub&gt;&lt;(_ _)&gt;&lt;Esc&gt;F/hi autocmd Filetype markdown inoremap ,t ** &lt;(_ _)&gt;&lt;Esc&gt;F*i autocmd Filetype markdown inoremap ,d `` &lt;(_ _)&gt;&lt;Esc&gt;F`i autocmd Filetype markdown inoremap ,c ```&lt;Enter&gt;&lt;(_ _)&gt;&lt;Enter&gt;```&lt;Enter&gt;&lt;Enter&gt;&lt;(_ _)&gt;&lt;Esc&gt;5kA autocmd Filetype markdown inoremap ,m - [ ] &lt;Enter&gt;&lt;(_ _)&gt;&lt;ESC&gt;kA autocmd Filetype markdown inoremap ,p !……
+        </div>
+        <p class="readmore"><a href="https://thaoeu.site/post/happynewyear/">阅读全文</a></p>
+    </article>
+    
+    
+    
+    <article class="post">
+        <header>
+            <h1 class="post-title">
+                <a href="https://thaoeu.site/post/github%E5%85%8D%E5%AF%86%E4%B8%8A%E4%BC%A0/" title=""></a>
+            </h1>
+        </header>
+        <date class="post-meta meta-date">
+            1年1月1日
+        </date>
+        
+        <div class="post-content">
+            github免密上传 参考地址vampire&rsquo;s blood 首先确定ssh公钥以上传到github
+git config --global credential.helper store 
+git push 时记住密码
+git config --global push.default simple……
+        </div>
+        <p class="readmore"><a href="https://thaoeu.site/post/github%E5%85%8D%E5%AF%86%E4%B8%8A%E4%BC%A0/">阅读全文</a></p>
+    </article>
+    
+    
+    
+    <article class="post">
+        <header>
+            <h1 class="post-title">
+                <a href="https://thaoeu.site/post/archlinuxs%E5%BC%80%E6%9C%BA%E8%87%AA%E5%8A%A8%E8%BF%9E%E6%8E%A5wifi/" title=""></a>
+            </h1>
+        </header>
+        <date class="post-meta meta-date">
+            1年1月1日
+        </date>
+        
+        <div class="post-content">
+            archlinux开机自动连接wifi 使用wifi-menu命令选择wifi输入密码。 这里系统没有安装gui使用了netctl.
+一、安装必须管理工具 pacman -S dialog netctl
+二、查看/etc/netctl/下文件 该目录下会有wifi-menu留下的配对文件。root账户可查看文件内容，包含网卡名、ssid、密码等。
+三、启动netctl服务 systemctl start netctl-auto@wlp100s0.service systemctl enable netctl-auto@wlp100s0.service wlp100s0是网卡名，按上述文件内容填写，重启即可。……
+        </div>
+        <p class="readmore"><a href="https://thaoeu.site/post/archlinuxs%E5%BC%80%E6%9C%BA%E8%87%AA%E5%8A%A8%E8%BF%9E%E6%8E%A5wifi/">阅读全文</a></p>
+    </article>
+    
+    
+    
+
+
+
+
+
+</div>
+
+                </div>
+
+                <div id="secondary">
+    <section class="widget">
+        <form id="search" action='//www.google.com/search' method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
+      
+      <input type="text" name="q" maxlength="20" placeholder="Search">
+      <input type="hidden" name="sitesearch" value="https://thaoeu.site/">
+      <button type="submit" class="submit icon-search"></button>
+</form>
+    </section>
+    
+    <section class="widget">
+        <h3 class="widget-title">最近文章</h3>
+<ul class="widget-list">
+    
+    <li>
+        <a href="https://thaoeu.site/post/windowslinux%E5%8F%8C%E7%B3%BB%E7%BB%9F%E8%93%9D%E7%89%99%E8%BF%9E%E6%8E%A5/" title="Windows、Linux双系统蓝牙连接">Windows、Linux双系统蓝牙连接</a>
+    </li>
+    
+    <li>
+        <a href="https://thaoeu.site/post/happynewyear/" title="HappyNewYear">HappyNewYear</a>
+    </li>
+    
+    <li>
+        <a href="https://thaoeu.site/post/archlinuxs%E5%BC%80%E6%9C%BA%E8%87%AA%E5%8A%A8%E8%BF%9E%E6%8E%A5wifi/" title=""></a>
+    </li>
+    
+    <li>
+        <a href="https://thaoeu.site/post/github%E5%85%8D%E5%AF%86%E4%B8%8A%E4%BC%A0/" title=""></a>
+    </li>
+    
+</ul>
+    </section>
+
+    
+
+    <section class="widget">
+        <h3 class="widget-title">分类</h3>
+<ul class="widget-list">
+    
+</ul>
+    </section>
+
+    <section class="widget">
+        <h3 class="widget-title">标签</h3>
+<div class="tagcloud">
+    
+</div>
+    </section>
+
+    
+
+    <section class="widget">
+        <h3 class="widget-title">其它</h3>
+        <ul class="widget-list">
+            <li><a href="https://thaoeu.site/index.xml">文章 RSS</a></li>
+        </ul>
+    </section>
+</div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+    <div class="container">
+        &copy; 2020 <a href="https://thaoeu.site/">ThAoeu By thaoeu</a>.
+        Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
+        <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/flysnow-org/maupassant-hugo" target="_blank">maupassant</a>.
+        
+    </div>
+</footer>
+
+
+
+<a id="rocket" href="#top"></a>
+<script type="text/javascript" src='/js/totop.js?v=0.0.0' async=""></script>
+
+
+
+
+
+
+</body>
+
+</html>

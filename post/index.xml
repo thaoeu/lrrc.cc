@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on ThAoeu</title>
+    <link>https://thaoeu.site/post/</link>
+    <description>Recent content in Posts on ThAoeu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn</language>
+    <lastBuildDate>Wed, 01 Jan 2020 09:06:12 +0000</lastBuildDate>
+    
+	<atom:link href="https://thaoeu.site/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Windows、Linux双系统蓝牙连接</title>
+      <link>https://thaoeu.site/post/windowslinux%E5%8F%8C%E7%B3%BB%E7%BB%9F%E8%93%9D%E7%89%99%E8%BF%9E%E6%8E%A5/</link>
+      <pubDate>Wed, 01 Jan 2020 09:06:12 +0000</pubDate>
+      
+      <guid>https://thaoeu.site/post/windowslinux%E5%8F%8C%E7%B3%BB%E7%BB%9F%E8%93%9D%E7%89%99%E8%BF%9E%E6%8E%A5/</guid>
+      <description>一般笔记本安装实体Linux双系统后，切换系统后蓝牙设备总有这样那样的问题，这里将使用修改key值的方法实现双系统连接蓝牙设备。 Windows下连接设备 转至Linux，连接设备后切换至su账户 执行cd /var/lib/bluetooth/ 当前目录下会有电脑的蓝牙地址，进入该地址，ls查看已连接的设备 选定以确定的蓝牙设备，使用文本编辑器查看info文件 按照简书上的教程，在这里找到[LinkKey]值即可，但我使用的键盘info文件却不是这样的构成
+[IdentityResolvingKey] Key=FD79B32764A287D4AC210ABD9EFE2844 [LongTermKey] Key=5D5F5EC78589D2882F5142FE86D0455E Authenticated=0 EncSize=16 EDiv=57930 Rand=13493215272868294029 如果类似我这种情况，需要记录IdentityResolvingKey和LongTermKey两项数值 回到Windows，下载PSTools工具，这里请自行百度，目前还不会插入链接。。。 执行PsExec.exe -s -i regedit
+找到HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\BTHPORT\Parameters\Keys\ 由于这里我并不能使用[LinkKey]，所以操作稍有不同
+在左侧目录找到蓝牙设备地址，双击进入，分别修改[IRK][LTK]两项 reboot F2:CE:2F:54:C9:52</description>
+    </item>
+    
+    <item>
+      <title>HappyNewYear</title>
+      <link>https://thaoeu.site/post/happynewyear/</link>
+      <pubDate>Wed, 01 Jan 2020 08:18:26 +0000</pubDate>
+      
+      <guid>https://thaoeu.site/post/happynewyear/</guid>
+      <description>新年快乐!生日快乐！ 第一篇文章 刚开始用，还不大会用Markdown 原计划是在一九年最后一天，也就是昨天上线的，结果由于脑子不在线导致没办法上线。
+二零一九年度总结 技术方面 Vim 经过一大段深坑浅坑的试探，终于确定了现在使用的Vim配置，中途出了不少小问题，尝试SpaceVim那次更是损失惨重，昨天完全删除了SpaceVim，不能说是不好，只能说是不适合我，下面贴个Vimrc展示下。
+set nu set autoindent call plug#begin(&#39;~/.vim/plugged&#39;) Plug &#39;mhinz/vim-startify&#39; Plug &#39;easymotion/vim-easymotion&#39; call plug#end() nmap &amp;lt;leader&amp;gt;f &amp;lt;Plug&amp;gt;(easymotion-s2) nnoremap &amp;lt;leader&amp;gt;w :w&amp;lt;Cr&amp;gt; nnoremap &amp;lt;leader&amp;gt;s &amp;lt;Esc&amp;gt;: nnoremap &amp;lt;leader&amp;gt;ve :vsplit $MYVIMRC&amp;lt;Cr&amp;gt; nnoremap &amp;lt;leader&amp;gt;vs :source $MYVIMRC&amp;lt;Cr&amp;gt; noremap &amp;lt;leader&amp;gt;i &amp;lt;Esc&amp;gt;:q&amp;lt;Cr&amp;gt; inoremap &amp;lt;leader&amp;gt;w &amp;lt;Esc&amp;gt;:w&amp;lt;Cr&amp;gt; inoremap &amp;lt;c-u&amp;gt; &amp;lt;Esc&amp;gt; viwU &amp;quot;autocmd Filetype markdown map &amp;lt;leader&amp;gt;w yiWi[&amp;lt;esc&amp;gt;Ea](&amp;lt;esc&amp;gt;pa) autocmd Filetype markdown inoremap ,h &amp;lt;Esc&amp;gt;/&amp;lt;(_ _)&amp;gt;&amp;lt;CR&amp;gt;:nohlsearch&amp;lt;CR&amp;gt;c7l autocmd Filetype markdown inoremap ,s &amp;lt;Esc&amp;gt;/ &amp;lt;(_ _)&amp;gt;&amp;lt;CR&amp;gt;:nohlsearch&amp;lt;CR&amp;gt;c5l&amp;lt;CR&amp;gt; autocmd Filetype markdown inoremap ,n ---&amp;lt;Enter&amp;gt;&amp;lt;Enter&amp;gt; autocmd Filetype markdown inoremap ,b **** &amp;lt;(_ _)&amp;gt;&amp;lt;Esc&amp;gt;F*hi autocmd Filetype markdown inoremap ,s ~~~~ &amp;lt;(_ _)&amp;gt;&amp;lt;Esc&amp;gt;F~hi autocmd Filetype markdown inoremap ,z &amp;lt;sup&amp;gt;&amp;lt;/sup&amp;gt;&amp;lt;(_ _)&amp;gt;&amp;lt;Esc&amp;gt;F/hi autocmd Filetype markdown inoremap ,v &amp;lt;sub&amp;gt;&amp;lt;/sub&amp;gt;&amp;lt;(_ _)&amp;gt;&amp;lt;Esc&amp;gt;F/hi autocmd Filetype markdown inoremap ,t ** &amp;lt;(_ _)&amp;gt;&amp;lt;Esc&amp;gt;F*i autocmd Filetype markdown inoremap ,d `` &amp;lt;(_ _)&amp;gt;&amp;lt;Esc&amp;gt;F`i autocmd Filetype markdown inoremap ,c ```&amp;lt;Enter&amp;gt;&amp;lt;(_ _)&amp;gt;&amp;lt;Enter&amp;gt;```&amp;lt;Enter&amp;gt;&amp;lt;Enter&amp;gt;&amp;lt;(_ _)&amp;gt;&amp;lt;Esc&amp;gt;5kA autocmd Filetype markdown inoremap ,m - [ ] &amp;lt;Enter&amp;gt;&amp;lt;(_ _)&amp;gt;&amp;lt;ESC&amp;gt;kA autocmd Filetype markdown inoremap ,p !</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://thaoeu.site/post/archlinuxs%E5%BC%80%E6%9C%BA%E8%87%AA%E5%8A%A8%E8%BF%9E%E6%8E%A5wifi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://thaoeu.site/post/archlinuxs%E5%BC%80%E6%9C%BA%E8%87%AA%E5%8A%A8%E8%BF%9E%E6%8E%A5wifi/</guid>
+      <description>archlinux开机自动连接wifi 使用wifi-menu命令选择wifi输入密码。 这里系统没有安装gui使用了netctl.
+一、安装必须管理工具 pacman -S dialog netctl
+二、查看/etc/netctl/下文件 该目录下会有wifi-menu留下的配对文件。root账户可查看文件内容，包含网卡名、ssid、密码等。
+三、启动netctl服务 systemctl start netctl-auto@wlp100s0.service systemctl enable netctl-auto@wlp100s0.service wlp100s0是网卡名，按上述文件内容填写，重启即可。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://thaoeu.site/post/github%E5%85%8D%E5%AF%86%E4%B8%8A%E4%BC%A0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://thaoeu.site/post/github%E5%85%8D%E5%AF%86%E4%B8%8A%E4%BC%A0/</guid>
+      <description>github免密上传 参考地址vampire&amp;rsquo;s blood 首先确定ssh公钥以上传到github
+git config --global credential.helper store 
+git push 时记住密码
+git config --global push.default simple</description>
+    </item>
+    
+  </channel>
+</rss>
