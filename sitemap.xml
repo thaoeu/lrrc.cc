@@ -3,41 +3,41 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://thaoeu.site/post/</loc>
+    <loc>https://www.thaoeu.site/post/archlinuxs%E5%BC%80%E6%9C%BA%E8%87%AA%E5%8A%A8%E8%BF%9E%E6%8E%A5wifi/</loc>
+    <lastmod>2020-02-02T08:18:26+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.thaoeu.site/post/</loc>
+    <lastmod>2020-02-02T08:18:26+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.thaoeu.site/</loc>
+    <lastmod>2020-02-02T08:18:26+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.thaoeu.site/post/github%E5%85%8D%E5%AF%86%E4%B8%8A%E4%BC%A0/</loc>
+    <lastmod>2020-02-01T08:18:26+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.thaoeu.site/post/windowslinux%E5%8F%8C%E7%B3%BB%E7%BB%9F%E8%93%9D%E7%89%99%E8%BF%9E%E6%8E%A5/</loc>
     <lastmod>2020-01-01T09:06:12+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://thaoeu.site/</loc>
-    <lastmod>2020-01-01T09:06:12+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://thaoeu.site/post/windowslinux%E5%8F%8C%E7%B3%BB%E7%BB%9F%E8%93%9D%E7%89%99%E8%BF%9E%E6%8E%A5/</loc>
-    <lastmod>2020-01-01T09:06:12+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://thaoeu.site/post/happynewyear/</loc>
+    <loc>https://www.thaoeu.site/post/happynewyear/</loc>
     <lastmod>2020-01-01T08:18:26+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://thaoeu.site/post/archlinuxs%E5%BC%80%E6%9C%BA%E8%87%AA%E5%8A%A8%E8%BF%9E%E6%8E%A5wifi/</loc>
-    <priority>0</priority>
+    <loc>https://www.thaoeu.site/categories/</loc>
   </url>
   
   <url>
-    <loc>https://thaoeu.site/post/github%E5%85%8D%E5%AF%86%E4%B8%8A%E4%BC%A0/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://thaoeu.site/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>https://thaoeu.site/tags/</loc>
+    <loc>https://www.thaoeu.site/tags/</loc>
   </url>
   
 </urlset>
