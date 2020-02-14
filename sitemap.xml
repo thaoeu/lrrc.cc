@@ -3,6 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://theqj.club/post/</loc>
+    <lastmod>2020-02-14T16:21:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://theqj.club/tags/</loc>
+    <lastmod>2020-02-14T16:21:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://theqj.club/post/test/</loc>
+    <lastmod>2020-02-14T16:21:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://theqj.club/</loc>
+    <lastmod>2020-02-14T16:21:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://theqj.club/tags/thetuhtehutehu/</loc>
+    <lastmod>2020-02-14T16:21:23+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://theqj.club/blog/</loc>
     <lastmod>2020-02-14T09:26:12+08:00</lastmod>
   </url>
@@ -10,16 +35,6 @@
   <url>
     <loc>https://theqj.club/blog/test/</loc>
     <lastmod>2020-02-14T09:26:12+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://theqj.club/</loc>
-    <lastmod>2020-02-14T09:26:12+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://theqj.club/post/</loc>
-    <lastmod>2020-02-14T09:22:51+08:00</lastmod>
   </url>
   
   <url>
@@ -59,10 +74,6 @@
   
   <url>
     <loc>https://theqj.club/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>https://theqj.club/tags/</loc>
   </url>
   
   <url>

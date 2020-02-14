@@ -6,10 +6,19 @@
     <description>Recent content on ThAoeu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 14 Feb 2020 09:26:12 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 14 Feb 2020 16:21:23 +0800</lastBuildDate>
     
 	<atom:link href="https://theqj.club/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Testtheteth</title>
+      <link>https://theqj.club/post/test/</link>
+      <pubDate>Fri, 14 Feb 2020 16:21:23 +0800</pubDate>
+      
+      <guid>https://theqj.club/post/test/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Test</title>
