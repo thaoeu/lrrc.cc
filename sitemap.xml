@@ -4,16 +4,31 @@
   
   <url>
     <loc>https://theqj.club/post/</loc>
-    <lastmod>2020-02-14T09:22:51+08:00</lastmod>
+    <lastmod>2020-02-16T19:22:20+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://theqj.club/post/ranger/</loc>
-    <lastmod>2020-02-14T09:22:51+08:00</lastmod>
+    <loc>https://theqj.club/tags/</loc>
+    <lastmod>2020-02-16T19:22:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://theqj.club/tags/vim/</loc>
+    <lastmod>2020-02-16T19:22:20+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://theqj.club/</loc>
+    <lastmod>2020-02-16T19:22:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://theqj.club/post/pangu/</loc>
+    <lastmod>2020-02-16T19:22:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://theqj.club/post/ranger/</loc>
     <lastmod>2020-02-14T09:22:51+08:00</lastmod>
   </url>
   
@@ -49,10 +64,6 @@
   
   <url>
     <loc>https://theqj.club/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>https://theqj.club/tags/</loc>
   </url>
   
   <url>
