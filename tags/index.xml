@@ -1,24 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on ThAoeu</title>
+    <title>Tags on 我的网页测试搭建</title>
     <link>https://theqj.club/tags/</link>
-    <description>Recent content in Tags on ThAoeu</description>
+    <description>Recent content in Tags on 我的网页测试搭建</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 14 Feb 2020 16:21:23 +0800</lastBuildDate>
     
 	<atom:link href="https://theqj.club/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>thetuhtehutehu</title>
-      <link>https://theqj.club/tags/thetuhtehutehu/</link>
-      <pubDate>Fri, 14 Feb 2020 16:21:23 +0800</pubDate>
-      
-      <guid>https://theqj.club/tags/thetuhtehutehu/</guid>
-      <description></description>
-    </item>
     
   </channel>
 </rss>
