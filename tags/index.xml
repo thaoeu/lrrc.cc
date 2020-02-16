@@ -1,31 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on 我的网页测试搭建</title>
-    <link>https://theqj.club/tags/</link>
-    <description>Recent content in Tags on 我的网页测试搭建</description>
+    <title>Tags on ThAoeu</title>
+    <link>https://thaoeu.site/tags/</link>
+    <description>Recent content in Tags on ThAoeu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sun, 16 Feb 2020 19:22:20 +0800</lastBuildDate>
     
-	<atom:link href="https://theqj.club/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://thaoeu.site/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>vim</title>
-      <link>https://theqj.club/tags/vim/</link>
+      <link>https://thaoeu.site/tags/vim/</link>
       <pubDate>Sun, 16 Feb 2020 19:22:20 +0800</pubDate>
       
-      <guid>https://theqj.club/tags/vim/</guid>
+      <guid>https://thaoeu.site/tags/vim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://thaoeu.site/tags/linux/</link>
+      <pubDate>Sun, 02 Feb 2020 08:18:26 +0000</pubDate>
+      
+      <guid>https://thaoeu.site/tags/linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>git</title>
-      <link>https://theqj.club/tags/git/</link>
+      <link>https://thaoeu.site/tags/git/</link>
       <pubDate>Sat, 01 Feb 2020 08:18:26 +0000</pubDate>
       
-      <guid>https://theqj.club/tags/git/</guid>
+      <guid>https://thaoeu.site/tags/git/</guid>
       <description></description>
     </item>
     
