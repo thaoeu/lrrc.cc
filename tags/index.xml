@@ -6,10 +6,19 @@
     <description>Recent content in Tags on ThAoeu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 22 Feb 2020 15:25:48 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 22 Feb 2020 20:28:57 +0800</lastBuildDate>
     
 	<atom:link href="https://thaoeu.site/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>other</title>
+      <link>https://thaoeu.site/tags/other/</link>
+      <pubDate>Sat, 22 Feb 2020 20:28:57 +0800</pubDate>
+      
+      <guid>https://thaoeu.site/tags/other/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>linux</title>
