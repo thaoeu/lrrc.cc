@@ -8,19 +8,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
     <link rel="shortcut icon" href="/img/favicon.ico" >
-    <title>Markdown 格式预览 - ThAoeu</title>
-    <meta property="og:title" content="Markdown 格式预览 - ThAoeu">
+    <title>Vimer 是如何使用 Htop 的 - ThAoeu</title>
+    <meta property="og:title" content="Vimer 是如何使用 Htop 的 - ThAoeu">
     <meta property="og:type" content="article">
         
-    <meta property="article:published_time" content="2020-02-17T21:50:15&#43;08:00">
+    <meta property="article:published_time" content="2020-02-22T15:25:48&#43;08:00">
         
         
-    <meta property="article:modified_time" content="2020-02-17T21:50:15&#43;08:00">
+    <meta property="article:modified_time" content="2020-02-22T15:25:48&#43;08:00">
         
-    <meta name="description" content="Markdown 格式预览">
+    <meta name="description" content="Vimer 是如何使用 Htop 的">
         
     <meta name="author" content="标杆杆">
-    <meta property="og:url" content="https://thaoeu.site/post/markdown/">
+    <meta property="og:url" content="https://thaoeu.site/post/htop/">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
     
@@ -66,12 +66,12 @@
                 <div class="res-cons">
                     <article class="post">
                         <header>
-                            <h1 class="post-title animated slower flipInX"><i class="fa fa-file-text-o"></i>&nbsp;Markdown 格式预览</h1>
+                            <h1 class="post-title animated slower flipInX"><i class="fa fa-file-text-o"></i>&nbsp;Vimer 是如何使用 Htop 的</h1>
                         </header>
                         <date class="post-meta meta-date animated slower fadeInUp">
                         <i class="fa fa-calendar" aria-hidden="true"></i>
-                            2020年2月17日
-                            21:50
+                            2020年2月22日
+                            15:25
                             
                         </date>
                         <div class="post-meta animated slower fadeInUp">
@@ -90,187 +90,49 @@
                 
                 <aside>
                     <div class="tablelist animated slower flipInX">
-                    <nav id="TableOfContents">
-  <ul>
-    <li><a href="#标题-2">标题 2</a>
-      <ul>
-        <li><a href="#标题-3">标题 3</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
+                    <nav id="TableOfContents"></nav>
                     </div>
                 </aside>
                  
                         <div class="post-content animated slower fadeInLeftBig">
                             <article>
-                            <h1 id="标题-1">标题 1</h1>
-<h2 id="标题-2">标题 2</h2>
-<h3 id="标题-3">标题 3</h3>
-<h4 id="标题-4">标题 4</h4>
-<h5 id="标题-5">标题 5</h5>
-<h6 id="标题-6">标题 6</h6>
-<blockquote>
-<p>对应语法及热键
-vimscript</p>
-</blockquote>
-<pre><code>#		&lt;leader&gt;9
-##		&lt;leader&gt;8
-###		&lt;leader&gt;7
-####	&lt;leader&gt;6
-#####	&lt;leader&gt;5
-######	&lt;leader&gt;4
-</code></pre><h1 id="加粗斜体删除线">加粗、斜体、删除线</h1>
-<p><strong>加粗</strong></p>
-<p><em>斜体</em></p>
-<p><del>删除线</del></p>
-<blockquote>
-<p>对应语法及热键
-vimscript</p>
-</blockquote>
-<pre><code>****	&lt;leader&gt;b
-**		&lt;leader&gt;i
-~~~~	&lt;leader&gt;s
-</code></pre><h1 id="引用">引用</h1>
-<blockquote>
-<p>With great power comes great responsibility.
-markdown</p>
-</blockquote>
-<pre><code>&gt;
-</code></pre><h1 id="代码块">代码块</h1>
-<p>golang</p>
-<pre><code>
-package main
-
-import (
-    &quot;fmt&quot; // 导入 fmt 包，调用其中的 Println() 函数
-)
-
-func main() {
-    fmt.Println(&quot;Hello，world！&quot;)
-}
-</code></pre><p><code>sudo pacman -S vim</code></p>
-<blockquote>
-<p>对应语法及热键
-vimscript</p>
-</blockquote>
-<pre><code>```		&lt;leader&gt;c
-``		&lt;leader&gt;d
-</code></pre><h1 id="序号列表">序号列表</h1>
+                            <p>Htop 是一款开源的交互式进程管理器，很多 Linux 发行版都内置了它。
+但默认的 Htop 是使用方向键进行进程的选择，我这种没有方向键的用户就不便使用。
+在 Htop 的仓库里也有人提过这个需求，但官方给的方案是－使用 Alt+hjkl 移动。
+但偏偏不巧的是，我还是个 Dwm 用户，我的 Alt 键被占用了。
+所以</p>
+<pre><code>yay -S htop-vim-git
+</code></pre><p>htop-vim-git 完美的解决了 Htop 下移动选择进程的问题，但它也占用了诸如：k, l 的一系列按键。
+如果你有方向键，或者你能接受 Alt+hjkl 的移动方式，那我建议你使用原版的 Htop.</p>
+<p>这里顺带介绍下 Htop 的一些快捷键。</p>
 <ul>
-<li>list</li>
+<li>F1, h, ?		帮助</li>
+<li>F2, Shift+s	设置</li>
+<li>F3, /			搜索</li>
+<li>F4, \			筛选</li>
+<li>F5, t			目录树</li>
+<li>F6, &lt;&gt;		切换排序方式</li>
+<li>F7, ]			提高进程优先级</li>
+<li>F8, [			降低进程有限级</li>
+<li>F9, k			杀死进程</li>
+<li>F10, q		退出</li>
 </ul>
-<ol>
-<li>list</li>
-<li>list</li>
-</ol>
+<p>在 htop-vim-git 下快捷键稍有不同。</p>
 <ul>
-<li>list
-<ol>
-<li>list</li>
-<li>list</li>
-</ol>
-</li>
+<li>F1, h, ?		帮助</li>
+<li>F2, Shift+s	设置</li>
+<li>F3, /			搜索</li>
+<li>F4, \			筛选</li>
+<li>F5, t			目录树</li>
+<li>F6, &lt;&gt;		切换排序方式</li>
+<li>F7, ]			提高进程优先级</li>
+<li>F8, [			降低进程有限级</li>
+<li>F9, Shift+k	杀死进程</li>
+<li>F10, q		退出</li>
+<li>p				切换 Command 简称</li>
+<li>., o,	,		选择排序方式</li>
 </ul>
-<blockquote>
-<p>对应语法及热键
-markdown</p>
-</blockquote>
-<pre><code>* list
-1. list
-2. list
 
-* list
-	1. list
-	2. list
-
-</code></pre><h1 id="链接">链接</h1>
-<p><a href="https://github.com/timzzx">感谢淡淡忧愁的主题模版</a></p>
-<blockquote>
-<p>对应语法及热键</p>
-</blockquote>
-<pre><code>[]()	&lt;leader&gt;u
-</code></pre><h1 id="图片">图片</h1>
-<p>!『这是图片无法加载时显示的文字』()</p>
-<blockquote>
-<p>对应语法及热键</p>
-</blockquote>
-<pre><code>![]()	&lt;leader&gt;p
-</code></pre><h1 id="分隔线">分隔线</h1>
-<hr>
-<hr>
-<blockquote>
-<p>对应语法及热键</p>
-</blockquote>
-<pre><code>---			&lt;leader&gt;n
-
---------	&lt;leader&gt;l
-
-讲真我不知道这两者的区别
-</code></pre><h1 id="表格">表格</h1>
-<table>
-<thead>
-<tr>
-<th>水果</th>
-<th align="right">价格</th>
-<th align="center">数量</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>香蕉</td>
-<td align="right">$1</td>
-<td align="center">5</td>
-</tr>
-<tr>
-<td>苹果</td>
-<td align="right">$1</td>
-<td align="center">6</td>
-</tr>
-<tr>
-<td>草莓</td>
-<td align="right">$1</td>
-<td align="center">7</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<p>对应语法及热键</p>
-</blockquote>
-<pre><code>| 水果     | 价格    |  数量  |
-| ------- | -----:   | :----: |
-| 香蕉    | $1      |   5    |
-| 苹果    | $1      |   6    |
-| 草莓    | $1      |   7    |
-</code></pre><ol>
-<li>
-<p>要增加菜单在 md 文件中加入 type: standalone</p>
-</li>
-<li>
-<p>文章要有评论在 md 文件中加入 gitment: true</p>
-</li>
-<li>
-<p>文章要有目录在 md 文件中加入 TableOfContents: true</p>
-</li>
-</ol>
-<pre><code>---
-title: &quot;博客开通&quot;
-date: 2018-07-04T17:44:01+08:00
-categories: 『其他』
-tags: 『其他』
-gitment: true
-TableOfContents: true
----
-</code></pre><ol start="4">
-<li>配置 gitment 在 config.toml 加入以下配置</li>
-</ol>
-<pre><code>[params]
-    clientID=''
-    clientSecret=''
-    owner=''
-    repo=''
-    admin=''
-</code></pre>
                             
                             <br />
                             <br />
@@ -278,10 +140,8 @@ TableOfContents: true
                             <hr />
                             
                             
-                            <a href="https://thaoeu.site/post/zsh/">上一页&nbsp;<i class="fa fa-angle-double-up" ></i></a>&nbsp;Zsh&lt;(_ _)&gt;<br /><br />
                             
-                            
-                            <a href="https://thaoeu.site/post/dwm/">下一页&nbsp;<i class="fa fa-angle-double-down" ></i></a>&nbsp;Dwm 短期使用总结
+                            <a href="https://thaoeu.site/post/hugo/">下一页&nbsp;<i class="fa fa-angle-double-down" ></i></a>&nbsp;Hugo 使用汇总
                             
                             <br />
                             <br />
@@ -292,6 +152,38 @@ TableOfContents: true
                         <p class="pull-right2"><a href="/" class="fa fa-home" ></a></p>
                             <p class="pull-right"><a href="#" class="fa fa-angle-double-up" ></a></p>
                             <p class="pull-left"><a href="#" onclick="javascript:history.go(-1);return false;" class="fa fa-angle-double-left" ></a></p>
+                
+                <div id="git-comments"></div>
+                <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+                <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+                <script>
+                
+                function GetUrlRelativePath()
+            　　{
+            　　　　var url = document.location.toString();
+            　　　　var arrUrl = url.split("//");
+
+            　　　　var start = arrUrl[1].indexOf("/");
+            　　　　var relUrl = arrUrl[1].substring(start);
+
+            　　　　if(relUrl.indexOf("?") != -1){
+            　　　　　　relUrl = relUrl.split("?")[0];
+            　　　　}
+            　　　　return relUrl;
+            　　}
+                  
+                  var gitalk = new Gitalk({
+                  clientID:  null ,
+                  clientSecret:  null ,
+                  owner:  null ,
+                  repo:  null ,
+                  admin: [ null ],
+                    id: GetUrlRelativePath(),  
+                  distractionFreeMode: false  
+                })
+
+                gitalk.render('git-comments')
+                </script>
                 
                         
             </div>
