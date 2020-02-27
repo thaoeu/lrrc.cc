@@ -8,8 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
     <link rel="shortcut icon" href="/img/favicon.ico" >
-    <title>Windows、Linux双系统蓝牙连接 - ThAoeu</title>
-    <meta property="og:title" content="Windows、Linux双系统蓝牙连接 - ThAoeu">
+    <title>Windows、Linux 双系统蓝牙连接 - ThAoeu</title>
+    <meta property="og:title" content="Windows、Linux 双系统蓝牙连接 - ThAoeu">
     <meta property="og:type" content="article">
         
     <meta property="article:published_time" content="2020-01-01T09:06:12&#43;08:00">
@@ -17,7 +17,7 @@
         
     <meta property="article:modified_time" content="2020-01-01T09:06:12&#43;08:00">
         
-    <meta name="description" content="Windows、Linux双系统蓝牙连接">
+    <meta name="description" content="Windows、Linux 双系统蓝牙连接">
         
     <meta name="author" content="标杆杆">
     <meta property="og:url" content="https://thaoeu.site/post/windowslinux%E5%8F%8C%E7%B3%BB%E7%BB%9F%E8%93%9D%E7%89%99%E8%BF%9E%E6%8E%A5/">
@@ -66,7 +66,7 @@
                 <div class="res-cons">
                     <article class="post">
                         <header>
-                            <h1 class="post-title animated slower flipInX"><i class="fa fa-file-text-o"></i>&nbsp;Windows、Linux双系统蓝牙连接</h1>
+                            <h1 class="post-title animated slower flipInX"><i class="fa fa-file-text-o"></i>&nbsp;Windows、Linux 双系统蓝牙连接</h1>
                         </header>
                         <date class="post-meta meta-date animated slower fadeInUp">
                         <i class="fa fa-calendar" aria-hidden="true"></i>
@@ -90,13 +90,13 @@
                 
                         <div class="post-content animated slower fadeInLeftBig">
                             <article>
-                            <h2 id="一般笔记本安装实体linux双系统后切换系统后蓝牙设备总有这样那样的问题这里将使用修改key值的方法实现双系统连接蓝牙设备">一般笔记本安装实体Linux双系统后，切换系统后蓝牙设备总有这样那样的问题，这里将使用修改key值的方法实现双系统连接蓝牙设备。</h2>
-<h4 id="windows下连接设备">Windows下连接设备</h4>
-<p>转至Linux，连接设备后切换至su账户
+                            <h2 id="一般笔记本安装实体-linux-双系统后切换系统后蓝牙设备总有这样那样的问题这里将使用修改-key-值的方法实现双系统连接蓝牙设备">一般笔记本安装实体 Linux 双系统后，切换系统后蓝牙设备总有这样那样的问题，这里将使用修改 key 值的方法实现双系统连接蓝牙设备。</h2>
+<h4 id="windows-下连接设备">Windows 下连接设备</h4>
+<p>转至 Linux，连接设备后切换至 su 账户
 执行<code>cd /var/lib/bluetooth/</code>
-当前目录下会有电脑的蓝牙地址，进入该地址，ls查看已连接的设备
-选定以确定的蓝牙设备，使用文本编辑器查看info文件
-按照简书上的教程，在这里找到[LinkKey]值即可，但我使用的键盘info文件却不是这样的构成</p>
+当前目录下会有电脑的蓝牙地址，进入该地址，ls 查看已连接的设备
+选定以确定的蓝牙设备，使用文本编辑器查看 info 文件
+按照简书上的教程，在这里找到 [LinkKey] 值即可，但我使用的键盘 info 文件却不是这样的构成</p>
 <pre><code>[IdentityResolvingKey]
 Key=FD79B32764A287D4AC210ABD9EFE2844
 
@@ -107,12 +107,12 @@ EncSize=16
 EDiv=57930
 Rand=13493215272868294029
 
-</code></pre><h3 id="如果类似我这种情况需要记录identityresolvingkey和longtermkey两项数值">如果类似我这种情况，需要记录IdentityResolvingKey和LongTermKey两项数值</h3>
-<h2 id="回到windows下载pstools工具这里请自行百度目前还不会插入链接">回到Windows，下载PSTools工具，这里请自行百度，目前还不会插入链接。。。</h2>
+</code></pre><h3 id="如果类似我这种情况需要记录-identityresolvingkey-和-longtermkey-两项数值">如果类似我这种情况，需要记录 IdentityResolvingKey 和 LongTermKey 两项数值</h3>
+<h2 id="回到-windows下载-pstools-工具这里请自行百度目前还不会插入链接">回到 Windows，下载 PSTools 工具，这里请自行百度，目前还不会插入链接&hellip;&hellip;</h2>
 <p>执行<code>PsExec.exe -s -i regedit</code></p>
-<h2 id="找到hkey_local_machinesystemcurrentcontrolsetservicesbthportparameterskeys">找到HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\BTHPORT\Parameters\Keys\</h2>
-<p>由于这里我并不能使用[LinkKey]，所以操作稍有不同</p>
-<h2 id="在左侧目录找到蓝牙设备地址双击进入分别修改irkltk两项">在左侧目录找到蓝牙设备地址，双击进入，分别修改[IRK][LTK]两项</h2>
+<h2 id="找到-hkey_local_machinesystemcurrentcontrolsetservicesbthportparameterskeys">找到 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\BTHPORT\Parameters\Keys\</h2>
+<p>由于这里我并不能使用 [LinkKey]，所以操作稍有不同</p>
+<h2 id="在左侧目录找到蓝牙设备地址双击进入分别修改-irkltk-两项">在左侧目录找到蓝牙设备地址，双击进入，分别修改 [IRK][LTK] 两项</h2>
 <h2 id="reboot">reboot</h2>
 <p>F2:CE:2F:54:C9:52</p>
 
@@ -205,10 +205,6 @@ Rand=13493215272868294029
         <ul class="widget-list">
             
             <li class="fa fa-angle-right">
-                <a href="/tags/_-_">_-_ (1)</a>
-            </li><br />
-            
-            <li class="fa fa-angle-right">
                 <a href="/tags/c">c (1)</a>
             </li><br />
             
@@ -217,7 +213,7 @@ Rand=13493215272868294029
             </li><br />
             
             <li class="fa fa-angle-right">
-                <a href="/tags/linux">linux (2)</a>
+                <a href="/tags/linux">linux (5)</a>
             </li><br />
             
             <li class="fa fa-angle-right">
@@ -225,7 +221,7 @@ Rand=13493215272868294029
             </li><br />
             
             <li class="fa fa-angle-right">
-                <a href="/tags/other">other (1)</a>
+                <a href="/tags/other">other (3)</a>
             </li><br />
             
             <li class="fa fa-angle-right">

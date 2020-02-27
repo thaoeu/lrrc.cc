@@ -6,10 +6,19 @@
     <description>Recent content on ThAoeu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 22 Feb 2020 20:28:57 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 27 Feb 2020 19:04:54 +0800</lastBuildDate>
     
 	<atom:link href="https://thaoeu.site/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>记录一次失败的尝试－崩坏 3 安装</title>
+      <link>https://thaoeu.site/post/honkaiimpact3rd/</link>
+      <pubDate>Thu, 27 Feb 2020 19:04:54 +0800</pubDate>
+      
+      <guid>https://thaoeu.site/post/honkaiimpact3rd/</guid>
+      <description>自从全线转 Linux 后，已经很久没有用 Pc 玩过游戏了。 只能偶尔玩下手游解解馋，但奈何手机屏幕小、性能也差，就打起了安装崩坏 3 客户端的主义。 说干就干，先前电脑上用 QQ 时就装好了 Wine, 便直接去管网下</description>
+    </item>
     
     <item>
       <title>终端字符</title>
@@ -48,7 +57,7 @@
     </item>
     
     <item>
-      <title>Zsh&lt;(_ _)&gt;</title>
+      <title>Zsh</title>
       <link>https://thaoeu.site/post/zsh/</link>
       <pubDate>Mon, 17 Feb 2020 22:52:43 +0800</pubDate>
       
@@ -107,7 +116,7 @@
       <pubDate>Mon, 10 Feb 2020 20:48:23 +0800</pubDate>
       
       <guid>https://thaoeu.site/post/msg/</guid>
-      <description>原计划使用linux完成全部博客部署的，奈何fcitx挂接小鹤音形始终还是差点意思，不如win下趁手，刚刚打算码篇文章也只好切换到win下。 刚刚用一个新号打开b站，首页看到一个关</description>
+      <description>原计划使用 linux 完成全部博客部署的，奈何 fcitx 挂接小鹤音形始终还是差点意思，不如 win 下趁手，刚刚打算码篇文章也只好切换到 win 下。 刚刚用一个新号打开 b 站，首页看到一个关于电魂的推送，看完了，回</description>
     </item>
     
     <item>
@@ -129,12 +138,12 @@
     </item>
     
     <item>
-      <title>Windows、Linux双系统蓝牙连接</title>
+      <title>Windows、Linux 双系统蓝牙连接</title>
       <link>https://thaoeu.site/post/windowslinux%E5%8F%8C%E7%B3%BB%E7%BB%9F%E8%93%9D%E7%89%99%E8%BF%9E%E6%8E%A5/</link>
       <pubDate>Wed, 01 Jan 2020 09:06:12 +0000</pubDate>
       
       <guid>https://thaoeu.site/post/windowslinux%E5%8F%8C%E7%B3%BB%E7%BB%9F%E8%93%9D%E7%89%99%E8%BF%9E%E6%8E%A5/</guid>
-      <description>一般笔记本安装实体Linux双系统后，切换系统后蓝牙设备总有这样那样的问题，这里将使用修改key值的方法实现双系统连接蓝牙设备。 Windows下连接设备 转至Linux，连接设备后</description>
+      <description>一般笔记本安装实体 Linux 双系统后，切换系统后蓝牙设备总有这样那样的问题，这里将使用修改 key 值的方法实现双系统连接蓝牙设备。 Windows 下连接设备 转至 Linux，连接设备后切换至 su 账户 执行cd /var/lib/bluetooth/ 当</description>
     </item>
     
     <item>
@@ -143,7 +152,7 @@
       <pubDate>Wed, 01 Jan 2020 08:18:26 +0000</pubDate>
       
       <guid>https://thaoeu.site/post/happynewyear/</guid>
-      <description>新年快乐!生日快乐！ 第一篇文章 刚开始用，还不大会用Markdown 原计划是在一九年最后一天，也就是昨天上线的，结果由于脑子不在线导致没办法上线。 二零一九年度总结 技术方面 Vim 经过一大</description>
+      <description>新年快乐！生日快乐！ 第一篇文章 刚开始用，还不大会用 Markdown 原计划是在一九年最后一天，也就是昨天上线的，结果由于脑子不在线导致没办法上线。 二零一九年度总结 技术方面 Vim 经过一大段深坑浅坑的试</description>
     </item>
     
     <item>
