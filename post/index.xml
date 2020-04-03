@@ -6,10 +6,19 @@
     <description>Recent content in Posts on ThAoeu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 28 Feb 2020 19:29:23 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 26 Mar 2020 19:54:38 +0800</lastBuildDate>
     
 	<atom:link href="https://thaoeu.site/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Pkg#&gt;#</title>
+      <link>https://thaoeu.site/post/pkg/</link>
+      <pubDate>Thu, 26 Mar 2020 19:54:38 +0800</pubDate>
+      
+      <guid>https://thaoeu.site/post/pkg/</guid>
+      <description>pkg search 搜索包 pkg install 安装包 pkg uninstall 卸载包 pkg reinstall 重新安装包 pkg update 更新源 pkg upgrade 升级软件包 pkg list-all 列出可供安装的所有包 pkg list-installed 列出已经安装的包 pkg shoe 显示某个包的详细信息 pkg files 显示某个包的相关文件夹路径</description>
+    </item>
     
     <item>
       <title>浏览器推荐－vivaldi</title>
@@ -125,7 +134,7 @@
       <pubDate>Mon, 10 Feb 2020 20:48:23 +0800</pubDate>
       
       <guid>https://thaoeu.site/post/msg/</guid>
-      <description>原计划使用 linux 完成全部博客部署的，奈何 fcitx 挂接小鹤音形始终还是差点意思，不如 win 下趁手，刚刚打算码篇文章也只好切换到 win 下。 刚刚用一个新号打开 b 站，首页看到一个关于电魂的推送，看完了，回</description>
+      <description>刚刚用一个新号打开 b 站，首页看到一个关于电魂的推送，看完了，回想起前些年和电魂的交集，我没有见证电魂衰落的全部过程，也不是梦三国的核心玩家，却是见证了一款从未爆款的手游 - 梦三国手</description>
     </item>
     
     <item>
@@ -134,7 +143,7 @@
       <pubDate>Sun, 02 Feb 2020 08:18:26 +0000</pubDate>
       
       <guid>https://thaoeu.site/post/archlinuxs%E5%BC%80%E6%9C%BA%E8%87%AA%E5%8A%A8%E8%BF%9E%E6%8E%A5wifi/</guid>
-      <description>使用 wifi-menu 命令选择 wifi 输入密码。 这里使用的是 netctl. 一、安装必须管理工具 pacman -S dialog netctl 二、查看 /etc/netctl/ 下文件 该目录下会有 wifi-menu 留下的配对文件。root 账户可查看文件内容，包含网卡名、ssid、密码等。 三、启</description>
+      <description>使用 wifi-menu 命令选择 wifi 输入密码。 这里使用的是 netctl. 一、安装必需管理工具 pacman -S dialog netctl 二、查看 /etc/netctl/ 文件 该目录下会有 wifi-menu 留下的配对文件。root 账户可查看文件内容，包含网卡名、ssid、密码等。 三、启动</description>
     </item>
     
     <item>

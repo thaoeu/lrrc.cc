@@ -4,7 +4,7 @@
 
     <meta charset="utf-8">
     <meta http-equiv="Cache-Control" content="public, max-age=7200" />
-    <meta name="generator" content="Hugo 0.66.0" />
+    <meta name="generator" content="Hugo 0.68.3" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
     <link rel="shortcut icon" href="/img/favicon.ico" >
@@ -95,8 +95,8 @@
 <p>转至 Linux，连接设备后切换至 su 账户
 执行<code>cd /var/lib/bluetooth/</code>
 当前目录下会有电脑的蓝牙地址，进入该地址，ls 查看已连接的设备
-选定以确定的蓝牙设备，使用文本编辑器查看 info 文件
-按照简书上的教程，在这里找到 [LinkKey] 值即可，但我使用的键盘 info 文件却不是这样的构成</p>
+选定已确定的蓝牙设备，使用文本编辑器查看 info 文件
+按照简书上的教程，在这里找到 [LinkKey] 值即可，但我使用的键盘 info 文件却不是这样构成的</p>
 <pre><code>[IdentityResolvingKey]
 Key=FD79B32764A287D4AC210ABD9EFE2844
 
@@ -108,7 +108,7 @@ EDiv=57930
 Rand=13493215272868294029
 
 </code></pre><h3 id="如果类似我这种情况需要记录-identityresolvingkey-和-longtermkey-两项数值">如果类似我这种情况，需要记录 IdentityResolvingKey 和 LongTermKey 两项数值</h3>
-<h2 id="回到-windows下载-pstools-工具这里请自行百度目前还不会插入链接">回到 Windows，下载 PSTools 工具，这里请自行百度，目前还不会插入链接&hellip;&hellip;</h2>
+<h2 id="回到-windows下载-pstools-工具这里请自行百度目前还不会插入链接">回到 Windows，下载 PSTools 工具，这里请自行百度，目前还不会插入链接……</h2>
 <p>执行<code>PsExec.exe -s -i regedit</code></p>
 <h2 id="找到-hkey_local_machinesystemcurrentcontrolsetservicesbthportparameterskeys">找到 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\BTHPORT\Parameters\Keys\</h2>
 <p>由于这里我并不能使用 [LinkKey]，所以操作稍有不同</p>
@@ -213,7 +213,7 @@ Rand=13493215272868294029
             </li><br />
             
             <li class="fa fa-angle-right">
-                <a href="/tags/linux">linux (5)</a>
+                <a href="/tags/linux">linux (6)</a>
             </li><br />
             
             <li class="fa fa-angle-right">
