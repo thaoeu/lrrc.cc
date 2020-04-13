@@ -3,22 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://thaoeu.site/post/</loc>
-    <lastmod>2020-04-08T11:03:06+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://thaoeu.site/post/test/</loc>
-    <lastmod>2020-04-08T11:03:06+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://thaoeu.site/tags/linux/</loc>
     <lastmod>2020-03-26T19:54:38+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://thaoeu.site/post/pkg/</loc>
+    <lastmod>2020-03-26T19:54:38+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thaoeu.site/post/</loc>
     <lastmod>2020-03-26T19:54:38+08:00</lastmod>
   </url>
   
@@ -150,6 +145,38 @@
   <url>
     <loc>https://thaoeu.site/</loc>
     <lastmod>2020-01-01T00:25:48+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thaoeu.site/post/arch/1/</loc>
+  </url>
+  
+  <url>
+    <loc>https://thaoeu.site/post/arch/2/</loc>
+  </url>
+  
+  <url>
+    <loc>https://thaoeu.site/post/arch/3/</loc>
+  </url>
+  
+  <url>
+    <loc>https://thaoeu.site/post/arch/4/</loc>
+  </url>
+  
+  <url>
+    <loc>https://thaoeu.site/post/arch/5/</loc>
+  </url>
+  
+  <url>
+    <loc>https://thaoeu.site/post/arch/6/</loc>
+  </url>
+  
+  <url>
+    <loc>https://thaoeu.site/post/arch/7/</loc>
+  </url>
+  
+  <url>
+    <loc>https://thaoeu.site/post/software_architecture/</loc>
   </url>
   
   <url>
