@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Linux Fcitx 挂载小鹤音形</title>
+      <link>https://thaoeu.site/post/fcitx/</link>
+      <pubDate>Sat, 30 May 2020 15:46:04 +0800</pubDate>
+      
+      <guid>https://thaoeu.site/post/fcitx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Kdeconnect 在 Windows 运行问题</title>
       <link>https://thaoeu.site/post/kdeconnect/</link>
       <pubDate>Mon, 11 May 2020 07:28:12 +0800</pubDate>
@@ -53,7 +62,7 @@
       <pubDate>Sat, 22 Feb 2020 20:28:57 +0800</pubDate>
       
       <guid>https://thaoeu.site/post/symbol/</guid>
-      <description>◂ ▾ ▴ ▸ ◄ ▼ ▲ ► ◢ ◣ ◤ ◥ ◩ ◪ ◭ ◮ ⌛                            |         λ                    </description>
+      <description>测试了下在 dmenu 下看着还可以的字符 字体：Source Code Pro 字号：10 ◂ ▾ ▴ ▸ ◄ ▼ ▲ ► ◢ ◣ ◤ ◥ ◩ ◪ ◭ ◮ ⌛                            |         λ    </description>
     </item>
     
     <item>

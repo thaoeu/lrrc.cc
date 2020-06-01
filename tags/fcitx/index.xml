@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fcitx on 我的网页测试搭建</title>
+    <link>https://thaoeu.site/tags/fcitx/</link>
+    <description>Recent content in Fcitx on 我的网页测试搭建</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 30 May 2020 15:46:04 +0800</lastBuildDate>
+    
+	<atom:link href="https://thaoeu.site/tags/fcitx/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Linux Fcitx 挂载小鹤音形</title>
+      <link>https://thaoeu.site/post/fcitx/</link>
+      <pubDate>Sat, 30 May 2020 15:46:04 +0800</pubDate>
+      
+      <guid>https://thaoeu.site/post/fcitx/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
