@@ -17,7 +17,7 @@
       <pubDate>Tue, 18 Feb 2020 16:00:37 +0800</pubDate>
       
       <guid>https://thaoeu.site/post/patch/</guid>
-      <description>Patch 是 Unix 上的应用程序，用于更新文本文件，一般为.diff 文件，要使用 patch 或者说打一个补丁，只要在终端执行： shell patch &amp;lt; example.diff</description>
+      <description>Patch 是 Unix 上的应用程序，用于更新文本文件，一般为.diff 文件，要使用 patch 或者说打一个补丁，</description>
     </item>
     
   </channel>

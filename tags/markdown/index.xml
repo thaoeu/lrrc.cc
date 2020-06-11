@@ -17,7 +17,7 @@
       <pubDate>Mon, 17 Feb 2020 21:50:15 +0800</pubDate>
       
       <guid>https://thaoeu.site/post/markdown/</guid>
-      <description>标题 1 标题 2 标题 3 标题 4 标题 5 标题 6 对应语法及热键 vimscript # &amp;lt;leader&amp;gt;9 ## &amp;lt;leader&amp;gt;8 ### &amp;lt;leader&amp;gt;7 #### &amp;lt;leader&amp;gt;6 ##### &amp;lt;leader&amp;gt;5 ###### &amp;lt;leader&amp;gt;4 加粗、斜体、删除线 加粗 斜体 删除线 对应语法及热键 vimscript **** &amp;lt;leader&amp;gt;b ** &amp;lt;leader&amp;gt;i ~~~~ &amp;lt;leader&amp;gt;s 引用 With great power comes great responsibility. markdown &amp;gt; 代码块 golang package main import ( &amp;quot;fmt&amp;quot; // 导</description>
+      <description>标题 1 标题 2 标题 3 标题 4 标题 5 标题 6 对应语法及热键 vimscript # &amp;lt;leader&amp;gt;9 ## &amp;lt;leader&amp;gt;8 ### &amp;lt;leader&amp;gt;7 #### &amp;lt;leader&amp;gt;6 ##### &amp;lt;leader&amp;gt;5 ###### &amp;lt;leader&amp;gt;4 加粗、斜体</description>
     </item>
     
   </channel>

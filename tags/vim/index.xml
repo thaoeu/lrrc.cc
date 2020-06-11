@@ -17,7 +17,7 @@
       <pubDate>Sat, 22 Feb 2020 15:25:48 +0800</pubDate>
       
       <guid>https://thaoeu.site/post/htop/</guid>
-      <description>Htop 是一款开源的交互式进程管理器，很多 Linux 发行版都内置了它。 但默认的 Htop 是使用方向键进行进程的选择，我这种没有方向键的用户就不便使用。 在 Htop 的仓库里也有人提过这个需求，但官方给的方案是－</description>
+      <description>Htop 是一款开源的交互式进程管理器，很多 Linux 发行版都内置了它。 但默认的 Htop 是使用方向键进行进程</description>
     </item>
     
     <item>
@@ -26,7 +26,7 @@
       <pubDate>Sun, 16 Feb 2020 19:22:20 +0800</pubDate>
       
       <guid>https://thaoeu.site/post/pangu/</guid>
-      <description>今天在 GitHub 上发现一个有趣的项目－中文文案排版指北 文中的很多观点使我受益匪浅，但又怕自己一时没法适应，所以找来了这款 Vim 插件－盘古之白 功能展示 &amp;lt;(_ _)&amp;gt; &amp;lt;(_ _)&amp;gt; 可以看到 PanGu 插件会在我保存文档后自动</description>
+      <description>今天在 GitHub 上发现一个有趣的项目－中文文案排版指北 文中的很多观点使我受益匪浅，但又怕自己一</description>
     </item>
     
   </channel>
