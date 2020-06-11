@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>我的网页测试搭建</title>
+    <title>Thaoeu</title>
     <link>https://thaoeu.site/</link>
-    <description>Recent content on 我的网页测试搭建</description>
+    <description>Recent content on Thaoeu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 01 Jan 2020 00:25:48 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 30 May 2020 15:46:04 +0800</lastBuildDate>
     
 	<atom:link href="https://thaoeu.site/index.xml" rel="self" type="application/rss+xml" />
     
@@ -17,7 +17,7 @@
       <pubDate>Sat, 30 May 2020 15:46:04 +0800</pubDate>
       
       <guid>https://thaoeu.site/post/fcitx/</guid>
-      <description></description>
+      <description>安装软件包 pacman -S fcitx fcitx-configtool fcitx-rime 前往小鹤网盘 下载码表 位于网盘：小鹤音形挂接第三方目录下：Rime 平台鼠须管 for macOS.zip 文件名是 macOS，Linux 挂接完全可用 下载后解压 将 Rime 文件夹内容添加到~/.c</description>
     </item>
     
     <item>
