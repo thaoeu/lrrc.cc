@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blog.lrrc.cc/post/</loc>
+    <lastmod>2021-02-20T10:10:21+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.lrrc.cc/</loc>
+    <lastmod>2021-02-20T10:10:21+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.lrrc.cc/post/q10-10/</loc>
+    <lastmod>2021-02-20T10:10:21+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.lrrc.cc/tags/fcitx/</loc>
     <lastmod>2020-05-30T15:46:04+08:00</lastmod>
   </url>
@@ -13,17 +28,7 @@
   </url>
   
   <url>
-    <loc>https://blog.lrrc.cc/post/</loc>
-    <lastmod>2020-05-30T15:46:04+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://blog.lrrc.cc/tags/</loc>
-    <lastmod>2020-05-30T15:46:04+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.lrrc.cc/</loc>
     <lastmod>2020-05-30T15:46:04+08:00</lastmod>
   </url>
   
