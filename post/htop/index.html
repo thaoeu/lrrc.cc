@@ -4,19 +4,23 @@
 
     <meta charset="utf-8">
     <meta http-equiv="Cache-Control" content="public, max-age=7200" />
-    <meta name="generator" content="Hugo 0.68.3" />
+    <meta name="generator" content="Hugo 0.80.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
     <link rel="shortcut icon" href="/img/favicon.ico" >
-    <title>归档 - 我的网页测试搭建</title>
-    <meta property="og:title" content="归档 - 我的网页测试搭建">
+    <title>Vimer 是如何使用 Htop 的 - Thaoeu</title>
+    <meta property="og:title" content="Vimer 是如何使用 Htop 的 - Thaoeu">
     <meta property="og:type" content="article">
         
+    <meta property="article:published_time" content="2020-02-22T15:25:48&#43;08:00">
         
-    <meta name="description" content="归档">
-        <meta name="author" content="ThAoeu">
         
-    <meta property="og:url" content="https://thaoeu.site/archives/">
+    <meta property="article:modified_time" content="2020-02-22T15:25:48&#43;08:00">
+        
+    <meta name="description" content="Vimer 是如何使用 Htop 的">
+        
+    <meta name="author" content="thaoeu">
+    <meta property="og:url" content="https://thaoeu.site/post/htop/">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
     
@@ -40,7 +44,7 @@
             </div>
             <div>
                 <nav id="nav-menu" class="clearfix wow slow zoomIn">
-                    <a class="" href="https://thaoeu.site/"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;文章</a>
+                    <a class="current" href="https://thaoeu.site/"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;文章</a>
                     
                     <a  href="https://thaoeu.site/about/" title="关于">
                         <i class="fa fa-bars" aria-hidden="true"></i>&nbsp;关于
@@ -62,31 +66,73 @@
                 <div class="res-cons">
                     <article class="post">
                         <header>
-                            <h1 class="post-title animated slower flipInX"><i class="fa fa-file-text-o"></i>&nbsp;归档</h1>
+                            <h1 class="post-title animated slower flipInX"><i class="fa fa-file-text-o"></i>&nbsp;Vimer 是如何使用 Htop 的</h1>
                         </header>
                         <date class="post-meta meta-date animated slower fadeInUp">
                         <i class="fa fa-calendar" aria-hidden="true"></i>
-                            1年1月1日
-                            00:00
+                            2020年2月22日
+                            15:25
                             
                         </date>
                         <div class="post-meta animated slower fadeInUp">
                             | <i class="fa fa-user-o" aria-hidden="true"></i>
-                            <a href="/about">标杆杆</a>
+                            <a href="/about">thaoeu</a>
                         </div>
                         
                         <br />
                         <div class="post-meta animated slower fadeInUp">
-                            <i class="fa fa-clock-o"></i>&nbsp;阅读时间0分钟
+                            <i class="fa fa-clock-o"></i>&nbsp;阅读时间1分钟
                         </div>
                         <br />
                     </article>
                     
                 </div>
                 
+                <aside>
+                    <div class="tablelist animated slower flipInX">
+                    <nav id="TableOfContents"></nav>
+                    </div>
+                </aside>
+                 
                         <div class="post-content animated slower fadeInLeftBig">
                             <article>
-                            
+                            <p>Htop 是一款开源的交互式进程管理器，很多 Linux 发行版都内置了它。
+但默认的 Htop 是使用方向键进行进程的选择，我这种没有方向键的用户就不便使用。
+在 Htop 的仓库里也有人提过这个需求，但官方给的方案是－使用 Alt+hjkl 移动。
+但偏偏不巧的是，我还是个 Dwm 用户，我的 Alt 键被占用了。
+所以</p>
+<pre><code>yay -S htop-vim-git
+</code></pre><p>htop-vim-git 完美地解决了 Htop 下移动选择进程的问题，但它也占用了诸如：k, l 的一系列按键。
+如果你有方向键，或者你能接受 Alt+hjkl 的移动方式，那我建议你使用原版的 Htop.</p>
+<p>这里顺带介绍下 Htop 的一些快捷键。</p>
+<ul>
+<li>F1, h, ?		帮助</li>
+<li>F2, Shift+s	设置</li>
+<li>F3, /			搜索</li>
+<li>F4, \			筛选</li>
+<li>F5, t			目录树</li>
+<li>F6, &lt;&gt;		切换排序方式</li>
+<li>F7, ]			提高进程优先级</li>
+<li>F8, [			降低进程有限级</li>
+<li>F9, k			杀死进程</li>
+<li>F10, q		退出</li>
+</ul>
+<p>在 htop-vim-git 下快捷键稍有不同。</p>
+<ul>
+<li>F1, h, ?		帮助</li>
+<li>F2, Shift+s	设置</li>
+<li>F3, /			搜索</li>
+<li>F4, \			筛选</li>
+<li>F5, t			目录树</li>
+<li>F6, &lt;&gt;		切换排序方式</li>
+<li>F7, ]			提高进程优先级</li>
+<li>F8, [			降低进程有限级</li>
+<li>F9, Shift+k	杀死进程</li>
+<li>F10, q		退出</li>
+<li>p				切换 Command 简称</li>
+<li>., o,	,		选择排序方式</li>
+</ul>
+
                             
                             <br />
                             <br />
@@ -94,8 +140,10 @@
                             <hr />
                             
                             
-                            <a href="https://thaoeu.site/about/">上一页&nbsp;<i class="fa fa-angle-double-up" ></i></a>&nbsp;关于<br /><br />
+                            <a href="https://thaoeu.site/post/symbol/">上一页&nbsp;<i class="fa fa-angle-double-up" ></i></a>&nbsp;终端字符<br /><br />
                             
+                            
+                            <a href="https://thaoeu.site/post/hugo/">下一页&nbsp;<i class="fa fa-angle-double-down" ></i></a>&nbsp;Hugo 使用汇总
                             
                             <br />
                             <br />
@@ -106,6 +154,38 @@
                         <p class="pull-right2"><a href="/" class="fa fa-home" ></a></p>
                             <p class="pull-right"><a href="#" class="fa fa-angle-double-up" ></a></p>
                             <p class="pull-left"><a href="#" onclick="javascript:history.go(-1);return false;" class="fa fa-angle-double-left" ></a></p>
+                
+                <div id="git-comments"></div>
+                <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+                <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+                <script>
+                
+                function GetUrlRelativePath()
+            　　{
+            　　　　var url = document.location.toString();
+            　　　　var arrUrl = url.split("//");
+
+            　　　　var start = arrUrl[1].indexOf("/");
+            　　　　var relUrl = arrUrl[1].substring(start);
+
+            　　　　if(relUrl.indexOf("?") != -1){
+            　　　　　　relUrl = relUrl.split("?")[0];
+            　　　　}
+            　　　　return relUrl;
+            　　}
+                  
+                  var gitalk = new Gitalk({
+                  clientID:  null ,
+                  clientSecret:  null ,
+                  owner:  null ,
+                  repo:  null ,
+                  admin: [ null ],
+                    id: GetUrlRelativePath(),  
+                  distractionFreeMode: false  
+                })
+
+                gitalk.render('git-comments')
+                </script>
                 
                         
             </div>
@@ -138,7 +218,7 @@
         <div class="card">
             <a href="https://github.com/thaoeu">
                 <div class="card-image">
-                    <img class="lazy" src="/img/fj.jpg" data-original="/img/fj.jpg" />
+                    <img class="lazy" src="/img/thaoeu.jpg" data-original="/img/fj.jpg" />
                 </div>
                 <div class="card-body">
                     <div class="card-title">
@@ -178,6 +258,10 @@
             </li><br />
             
             <li class="fa fa-angle-right">
+                <a href="/tags/fcitx">fcitx (1)</a>
+            </li><br />
+            
+            <li class="fa fa-angle-right">
                 <a href="/tags/git">git (1)</a>
             </li><br />
             
@@ -195,6 +279,10 @@
             
             <li class="fa fa-angle-right">
                 <a href="/tags/vim">vim (2)</a>
+            </li><br />
+            
+            <li class="fa fa-angle-right">
+                <a href="/tags/windows">windows (1)</a>
             </li><br />
             
             <li class="fa fa-angle-right">
@@ -218,7 +306,7 @@
 </div>
 <footer id="footer">
     <div class="container" style="text-align:center">
-        &copy; 2020 <a href="https://thaoeu.site/">我的网页测试搭建 By 标杆杆</a>.
+        &copy; 2021 <a href="https://thaoeu.site/">Thaoeu By thaoeu</a>.
 
         
     </div>
