@@ -7,20 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
 
-    <title>Windows、Linux 双系统蓝牙连接 | 标杆杆栈</title>
-    <meta property="og:title" content="Windows、Linux 双系统蓝牙连接 - 标杆杆栈">
+    <title>域名注册 | 标杆杆栈</title>
+    <meta property="og:title" content="域名注册 - 标杆杆栈">
     <meta property="og:type" content="article">
         
-    <meta property="article:published_time" content='2020-01-01T09:06:12&#43;08:00'>
+    <meta property="article:published_time" content='2021-02-26T12:01:03&#43;08:00'>
         
         
-    <meta property="article:modified_time" content='2020-01-01T09:06:12&#43;08:00'>
+    <meta property="article:modified_time" content='2021-02-26T12:01:03&#43;08:00'>
         
     <meta name="Keywords" content="这里没有技术，只有情绪。">
-    <meta name="description" content="Windows、Linux 双系统蓝牙连接">
+    <meta name="description" content="域名注册">
         
     <meta name="author" content="标杆杆">
-    <meta property="og:url" content="https://lrrc.cc/post/windowslinux%E5%8F%8C%E7%B3%BB%E7%BB%9F%E8%93%9D%E7%89%99%E8%BF%9E%E6%8E%A5/">
+    <meta property="og:url" content="https://lrrc.cc/post/q10_domain/">
     <link rel="shortcut icon" href='/favicon.ico'  type="image/x-icon">
 
     <link rel="stylesheet" href='/css/normalize.css'>
@@ -131,20 +131,7 @@
 <div class="post-toc" style="position: absolute; top: 188px;">
     <h2 class="post-toc-title">文章目录</h2>
     <div class="post-toc-content">
-        <nav id="TableOfContents">
-  <ul>
-    <li><a href="#一般笔记本安装实体-linux-双系统后切换系统后蓝牙设备总有这样那样的问题这里将使用修改-key-值的方法实现双系统连接蓝牙设备">一般笔记本安装实体 Linux 双系统后，切换系统后蓝牙设备总有这样那样的问题，这里将使用修改 key 值的方法实现双系统连接蓝牙设备。</a>
-      <ul>
-        <li></li>
-        <li><a href="#如果类似我这种情况需要记录-identityresolvingkey-和-longtermkey-两项数值">如果类似我这种情况，需要记录 IdentityResolvingKey 和 LongTermKey 两项数值</a></li>
-      </ul>
-    </li>
-    <li><a href="#回到-windows下载-pstools-工具这里请自行百度目前还不会插入链接">回到 Windows，下载 PSTools 工具，这里请自行百度，目前还不会插入链接……</a></li>
-    <li><a href="#找到-hkey_local_machinesystemcurrentcontrolsetservicesbthportparameterskeys">找到 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\BTHPORT\Parameters\Keys\</a></li>
-    <li><a href="#在左侧目录找到蓝牙设备地址双击进入分别修改-irkltk-两项">在左侧目录找到蓝牙设备地址，双击进入，分别修改 [IRK][LTK] 两项</a></li>
-    <li><a href="#reboot">reboot</a></li>
-  </ul>
-</nav>
+        <nav id="TableOfContents"></nav>
     </div>
 </div>
 <script type="text/javascript">
@@ -176,40 +163,24 @@
 </script>
     <article class="post">
         <header>
-            <h1 class="post-title">Windows、Linux 双系统蓝牙连接</h1>
+            <h1 class="post-title">域名注册</h1>
         </header>
         <date class="post-meta meta-date">
-            2020年1月1日
+            2021年2月26日
         </date>
         
         
         
         <div class="post-content">
-            <h2 id="一般笔记本安装实体-linux-双系统后切换系统后蓝牙设备总有这样那样的问题这里将使用修改-key-值的方法实现双系统连接蓝牙设备">一般笔记本安装实体 Linux 双系统后，切换系统后蓝牙设备总有这样那样的问题，这里将使用修改 key 值的方法实现双系统连接蓝牙设备。</h2>
-<h4 id="windows-下连接设备">Windows 下连接设备</h4>
-<p>转至 Linux，连接设备后切换至 su 账户
-执行<code>cd /var/lib/bluetooth/</code>
-当前目录下会有电脑的蓝牙地址，进入该地址，ls 查看已连接的设备
-选定已确定的蓝牙设备，使用文本编辑器查看 info 文件
-按照简书上的教程，在这里找到 [LinkKey] 值即可，但我使用的键盘 info 文件却不是这样构成的</p>
-<pre><code>[IdentityResolvingKey]
-Key=FD79B32764A287D4AC210ABD9EFE2844
-
-[LongTermKey]
-Key=5D5F5EC78589D2882F5142FE86D0455E
-Authenticated=0
-EncSize=16
-EDiv=57930
-Rand=13493215272868294029
-
-</code></pre><h3 id="如果类似我这种情况需要记录-identityresolvingkey-和-longtermkey-两项数值">如果类似我这种情况，需要记录 IdentityResolvingKey 和 LongTermKey 两项数值</h3>
-<h2 id="回到-windows下载-pstools-工具这里请自行百度目前还不会插入链接">回到 Windows，下载 PSTools 工具，这里请自行百度，目前还不会插入链接……</h2>
-<p>执行<code>PsExec.exe -s -i regedit</code></p>
-<h2 id="找到-hkey_local_machinesystemcurrentcontrolsetservicesbthportparameterskeys">找到 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\BTHPORT\Parameters\Keys\</h2>
-<p>由于这里我并不能使用 [LinkKey]，所以操作稍有不同</p>
-<h2 id="在左侧目录找到蓝牙设备地址双击进入分别修改-irkltk-两项">在左侧目录找到蓝牙设备地址，双击进入，分别修改 [IRK][LTK] 两项</h2>
-<h2 id="reboot">reboot</h2>
-<p>F2:CE:2F:54:C9:52</p>
+            <p>刚刚寻思着整个国外的域名服务商，省着隔三岔五的收到域名被阻的消息。</p>
+<p>我选域名一直只有一个指标：“好敲。”</p>
+<p>最开始选的一个全在主力键区，THAOEU，在 Dvorak 下完全不必移动手指。</p>
+<p>但有个问题，无论什么域名总归还是要敲个：“.”，于是就开始寻找第一行的域名。</p>
+<p>即在 pyfgcrl 中组合出个后缀，最后找上了 cc ，即短又好敲。</p>
+<p>如果可以我是尽可能不选择包含数字的域名，但恰恰包含数字的域名又是最短的。</p>
+<p>勉强选出个满意的，又发现国外的域名服务商较国内贵上许多，还不确定是否方便支付。</p>
+<p>比如同样的域名，阿里云可能只要不到四百元就能购置十年期，但同样的域名在国外服务商却要六百余元。</p>
+<p>同时看了下账单，域名解析服务也不是免费的，价格这反面国内服务商有很大优势。</p>
 
         </div>
 
@@ -222,9 +193,15 @@ Rand=13493215272868294029
     <h2>See Also</h2>
     <ul class="listing">
         
-        <li><a href="/post/happynewyear/">HappyNewYear</a></li>
+        <li><a href="/post/q10steam/">Steam 背景黄了</a></li>
         
-        <li><a href="/about/">关于</a></li>
+        <li><a href="/post/beian/">备案那点事</a></li>
+        
+        <li><a href="/post/q10.fcitx/">我是如何自定义码表的</a></li>
+        
+        <li><a href="/post/q10-10/">这里是标杆杆副站</a></li>
+        
+        <li><a href="/post/fcitx/">Linux Fcitx 挂载小鹤音形</a></li>
         
     </ul>
 </div>
@@ -232,11 +209,7 @@ Rand=13493215272868294029
 
         <div class="post-meta meta-tags">
             
-            <ul class="clearfix">
-                
-                <li><a href='/tags/linux'>linux</a></li>
-                
-            </ul>
+            没有标签
             
         </div>
     </article>
