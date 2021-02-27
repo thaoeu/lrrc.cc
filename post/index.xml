@@ -6,7 +6,16 @@
     <description>Recent content in Posts on 标杆杆栈</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 26 Feb 2021 22:17:40 +0800</lastBuildDate><atom:link href="https://lrrc.cc/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 27 Feb 2021 17:34:22 +0800</lastBuildDate><atom:link href="https://lrrc.cc/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Firefox 全屏启动</title>
+      <link>https://lrrc.cc/post/q10-firefox/</link>
+      <pubDate>Sat, 27 Feb 2021 17:34:22 +0800</pubDate>
+      
+      <guid>https://lrrc.cc/post/q10-firefox/</guid>
+      <description>本 文记录了我对 Firefox 启动项的一些尝试。 最开始我的目的非常简单，就是像 Chrome 那样只在新标签也显示书签栏，经过各种检索我找到了方法，虽然很</description>
+    </item>
+    
     <item>
       <title>记一次网易答题</title>
       <link>https://lrrc.cc/post/q10_163/</link>
